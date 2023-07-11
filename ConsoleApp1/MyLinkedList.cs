@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class MyLinkedList<T>
+    internal class MyLinkedList<T> 
     {
         private List<MyNode<T>> nodes;
 

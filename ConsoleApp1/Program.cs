@@ -2,14 +2,24 @@
 {
     internal class Program
     {
+        
         static void Main(string[] args)
         {
-            var linkedList = new MyLinkedList<int>();
+            GC.Collect();
 
-            var node1 = linkedList.Add(1);
+            User user = new User();
+            try
+            {
 
+            }
+            catch (Exception ex)
+            {
 
-            Console.WriteLine(node1.Value);
+            }
+            finally
+            {
+                user.Dispose();
+            }
         }
     }
 }
